@@ -1,0 +1,28 @@
+﻿body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:lemonchiffon;
+    color:black;
+}
+a {
+    color: darkgoldenrod;
+    text-decoration: none;
+    padding: 10px;
+}
+ a:hover {
+    font-size:1.2em;
+    text-shadow:1px 1px 1px darkgoldenrod;
+    border-radius: 10px;
+    text-decoration:none;
+    color:darkgoldenrod;
+}
+.nav-link:hover{
+    color:white;
+    background-color:darkgoldenrod;
+    text-decoration:none;
+    border-radius:10px;
+}
+
+.nav-link {
+    color: lightgoldenrodyellow !important;
+}
+

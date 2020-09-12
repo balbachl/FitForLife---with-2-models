@@ -1,0 +1,52 @@
+﻿@model FitForLife.Models.Stats
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Stats</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="statDate" class="control-label"></label>
+                <input asp-for="statDate" class="form-control" />
+                <span asp-validation-for="statDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="age" class="control-label"></label>
+                <input asp-for="age" class="form-control" />
+                <span asp-validation-for="age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="weight" class="control-label"></label>
+                <input asp-for="weight" class="form-control" />
+                <span asp-validation-for="weight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="height" class="control-label"></label>
+                <input asp-for="height" class="form-control" />
+                <span asp-validation-for="height" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MembersID" class="control-label"></label>
+                <select asp-for="MembersID" class ="form-control" asp-items="ViewBag.MembersID"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
